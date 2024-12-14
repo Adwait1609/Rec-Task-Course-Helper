@@ -1,0 +1,114 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+/* Container for Layout */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Makes child elements equal height */
+    gap: 20px;
+    width: 90%;
+    height: 80vh; /* Sets container height to 80% of viewport */
+}
+
+/* Shared Section Styles */
+.countdown, .intro {
+    flex: 1; /* Makes both sections equal width */
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Countdown Section with Two Divisions */
+.countdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.countdown-upper {
+    flex: 1; /* Takes up 50% height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown-lower {
+    border-top: 2px solid black; /* Horizontal dividing line */
+    flex: 1; /* Takes up 50% height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Timer Styling */
+#timer {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#preview-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #007BFF;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#preview-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Intro Section */
+
+
+.profile-pic {
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    border: 2px solid black;
+}
+
+.intro p {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;            /* Ensure the image fills the container width */
+    height: 100%;           /* Ensure the image fills the container height */
+    object-fit: cover;      /* Maintain aspect ratio and cover the circle */
+    border-radius: 50%;     /* Makes the image circular */
+    display: block; 
+    margin-top:20px;        /* Removes unwanted inline spacing */
+}
+
+

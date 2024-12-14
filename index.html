@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year Countdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Countdown Section -->
+    <div class="countdown">
+        <div class="countdown-upper">
+            <h2>New Year Countdown</h2>
+            <div id="timer">00:00:00:00</div>
+            <button id="preview-btn">Preview</button>
+        </div>
+        <div class="countdown-lower">
+            <p>Pappu can't Dance sala</p>
+        </div>
+    </div>
+
+    <!-- Intro Section -->
+    <div class="intro">
+        
+        <img src="profile2.webp" alt="Your Picture" class="profile-pic">
+        <p>
+            Hi, I'm Adwait Kadam!<br>
+            Skills: HTML, CSS, JavaScript<br>
+            Achievements: Creative developer and coder!
+        </p>
+    </div>
+</div>
+<script src="script.js">
+    // // Countdown Timer Logic
+    // const countdown = () => {
+    //     const newYearDate = new Date("Jan 1, 2025 00:00:00").getTime();
+
+    //     const x = setInterval(() => {
+    //         const now = new Date().getTime();
+    //         const distance = newYearDate - now;
+
+    //         if (distance < 0) {
+    //             clearInterval(x);
+    //             document.getElementById("timer").innerHTML = "Happy New Year!";
+    //             return;
+    //         }
+
+    //         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    //         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    //         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    //         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    //         document.getElementById("timer").innerHTML =
+    //             `${days}d : ${hours}h : ${minutes}m : ${seconds}s`;
+    //     }, 1000);
+    // };
+
+    // countdown();
+
+    // // Preview Button Functionality
+    // document.getElementById("preview-btn").addEventListener("click", () => {
+    //     // This is where you can define the preview action. For example:
+    //     const countdownSection = document.querySelector(".countdown");
+        
+    //     // Toggle visibility or display a preview message
+    //     countdownSection.classList.toggle("preview-active"); // Adds or removes a class
+    //     alert("Happy New Year!"); // Or any custom preview action
+    // });
+
+</script>
+
+
+</body>
+</html>
